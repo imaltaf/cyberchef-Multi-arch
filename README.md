@@ -28,7 +28,24 @@ docker run -d --name cyberchef -p 8000:80 codesec/cyberchef:latest
 
 ✅ Open your browser and visit: http://localhost:8000
 
-📑 Run with Docker Compose
+
+
+# 📑 Run with Docker Compose
+
+## 📥 Download docker-compose.yml
+You can download the pre-configured multi-arch Docker Compose file from this repository:
+
+```sh
+curl -O https://raw.githubusercontent.com/imaltaf/cyberchef-Multi-arch/main/docker-compose.yml
+```
+
+### Then run it with:
+
+```sh
+docker compose up -d
+```
+
+### 📦 This will automatically pull and run the CyberChef multi-arch images as defined in the compose file.
 
 ```bash
 version: '3.8'
